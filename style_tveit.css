@@ -1,0 +1,180 @@
+/* =============================================
+   GEOG 6150 - Magnus Tveit - Stylesheet
+   ============================================= */
+
+/* --- Reset & Base --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  color: #222;
+  background-color: #d6e4f0;
+  min-width: 700px;
+}
+
+a {
+  color: #1a3a5c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c0392b;
+}
+
+/* --- HEADER --- */
+#header {
+  background-color: #1a3a5c;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+}
+
+#header h1 {
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+/* --- TOP NAVIGATION --- */
+#top-nav {
+  background-color: #e8f0f7;
+  border-top: 2px solid #1a3a5c;
+  border-bottom: 2px solid #1a3a5c;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+#top-nav nav a {
+  margin: 0 20px;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+/* --- PAGE BODY (left nav + main) --- */
+#page-body {
+  display: flex;
+  min-height: 520px;
+  background-color: #f0f4f8;
+  border-bottom: 2px solid #1a3a5c;
+}
+
+/* --- LEFT NAVIGATION --- */
+#left-nav {
+  width: 170px;
+  min-width: 170px;
+  background-color: #dce8f5;
+  border-right: 2px solid #1a3a5c;
+  padding: 20px 16px;
+}
+
+#left-nav h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #1a3a5c;
+}
+
+#left-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#left-nav ul li {
+  margin-bottom: 8px;
+}
+
+#left-nav ul li a {
+  font-size: 0.9em;
+}
+
+/* --- MAIN CONTENT --- */
+#main-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 28px 32px;
+}
+
+/* Profile: image + info side by side */
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-image img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #1a3a5c;
+}
+
+.profile-info {
+  padding-top: 10px;
+}
+
+.profile-info h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #1a3a5c;
+}
+
+.profile-info p {
+  margin-bottom: 6px;
+  font-size: 0.95em;
+}
+
+/* Research Interests */
+.interests-section {
+  margin-top: 10px;
+}
+
+.interests-section p {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.interests-section ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.interests-section ul li {
+  margin-bottom: 5px;
+  font-size: 0.95em;
+}
+
+/* --- FOOTER --- */
+#footer {
+  background-color: #1a3a5c;
+  color: white;
+  text-align: center;
+  padding: 10px 0 8px;
+}
+
+.bottom-nav {
+  margin-bottom: 6px;
+}
+
+.bottom-nav a {
+  color: #cfe0f0;
+  margin: 0 18px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.bottom-nav a:hover {
+  color: white;
+}
+
+.footer-copy {
+  font-size: 0.85em;
+  color: #cfe0f0;
+}
